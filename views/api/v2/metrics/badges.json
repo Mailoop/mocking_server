@@ -1,0 +1,102 @@
+{
+    "badges": [
+        {
+            "name": "batman",
+            "value": {
+                "number": 1,
+                "unit": "emails",
+                "activated": false
+            }
+        },
+        {
+            "name": "flash",
+            "value": {
+                "number": 2,
+                "unit": "emails",
+                "activated": false
+            }
+        },
+        {
+            "name": "donkey",
+            "value": {
+                "number": 0,
+                "unit": "votes",
+                "activated": false
+            }
+        },
+        {
+            "name": "spiderman",
+            "value": {
+                "number": 3,
+                "unit": "emails",
+                "activated": false
+            }
+        },
+        {
+            "name": "starlord",
+            "value": {
+                "number": 9,
+                "unit": "votes",
+                "activated": true
+            }
+        },
+        {
+            "name": "pr_xavier",
+            "value": {
+                "number": 10,
+                "unit": "votes",
+                "activated": true
+            }
+        },
+        {
+            "name": "deadpool",
+            "value": {
+                "number": 0,
+                "unit": "votes",
+                "activated": false
+            }
+        },
+        {
+            "name": "timide",
+            "value": {
+                "number": 0,
+                "unit": "votes",
+                "activated": false
+            }
+        },
+        {
+            "name": "iron_man",
+            "value": {
+                "number": 0,
+                "unit": "emails",
+                "activated": false
+            }
+        },
+        {
+            "name": "elastigirl",
+            "value": {
+                "number_emails": 49,
+                "emails_unit": "emails_during_meetings",
+                "nb_overlaps": 3,
+                "overlaps_unit": "number_meeting_overlapping",
+                "activated": true
+            }
+        },
+        {
+            "name": "dracula",
+            "value": {
+                "number": 77070,
+                "unit": "seconds",
+                "activated": false
+            }
+        },
+        {
+            "name": "avengers",
+            "value": {
+                "number": 188700,
+                "unit": "minutes",
+                "activated": true
+            }
+        }
+    ]
+}

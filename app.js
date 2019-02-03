@@ -1,4 +1,3 @@
-import {feedbacks} from './responses/api/V2/responses.js'
 
 // 1
 var cors = require('cors')
@@ -10,23 +9,25 @@ app.use(cors())
 // 2
 app.use(morgan('dev'));
 
-app.options('/*', function(req, res) {
 
-}
-)
-// 3
-app.get('/*', function (req, res) {
-  res.send({coucou: "random"});
-});
-// 3
-app.post('/*', function (req, res) {
-  res.send({ coucou: "random" });
-});
+const response = [
+  {method:"GET", path: "/api/v2/metrics/feedbacks"},
+  { method: "GET", path: "/api/v2/metrics/badges" },
+  { method: "GET", path: "/api/v2/metrics/solicitation" },
+  { method: "GET", path: "/api/v2/metrics/free_intervals" },
+  { method: "GET", path: "/api/v2/metrics/overview" },
+  { method: "GET", path: "/api/v2/metrics/consumed_time_repartition" },
 
-app.options('/*', function (req, res) {
+]
 
-}
-)
+response.forEach( responseConfig => {
+  app.get(responseConfig.path, function (req, res) {
+    const responseFilePath = `./views${responseConfig.path}_view.json`
+    const response = require(responseFilePath); 
+    res.send(response);
+  });
+
+}) 
 
 // 4
 app.listen(3005, function () {
